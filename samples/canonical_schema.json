@@ -1,0 +1,13 @@
+{
+  "record": {
+    "employee_id": "string|''",
+    "employee_name": "string (required, case-insensitive identity)",
+    "department": "string|''",
+    "date": "YYYY-MM-DD",
+    "status": "Present|Absent|Leave",
+    "file": "source file",
+    "ref": "sheet/row, table/row, page/lines or OCR lines"
+  },
+  "key": "(user, lower(employee_name), date) - re-uploads overwrite",
+  "attendance_pct": "Present / (Present+Absent+Leave) * 100"
+}

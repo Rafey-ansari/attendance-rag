@@ -1,0 +1,6 @@
+employee_id,employee_name,department,date,status
+E001,Asha Patil,Engineering,2026-09-01,Present
+E002,Ravi Kumar,Engineering,2026-09-01,Present
+E003,Meera Shah,HR,2026-09-01,Present
+E004,John Dsouza,HR,2026-09-01,Absent
+E005,Priya Nair,Finance,2026-09-01,Present

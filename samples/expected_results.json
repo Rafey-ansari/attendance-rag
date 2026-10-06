@@ -1,0 +1,28 @@
+{
+  "files": {
+    "attendance.csv": "2026-09-01",
+    "attendance.xlsx": "2026-09-02",
+    "attendance.docx": "2026-09-03",
+    "attendance_text.pdf": "2026-09-04",
+    "attendance_scan.png": "2026-09-05 (OCR)",
+    "attendance_scan.pdf": "2026-09-08 (OCR)"
+  },
+  "total_records": 30,
+  "Q: Who was present on 2026-09-03?": [
+    "Asha Patil",
+    "Priya Nair",
+    "Ravi Kumar"
+  ],
+  "Q: Average attendance 2026-09-01 to 2026-09-08 (%)": 73.3,
+  "Q: Average attendance 2026-09-01 to 2026-09-03 (%)": 66.7,
+  "Q: Which employee had the highest attendance?": [
+    "Asha Patil",
+    "Priya Nair",
+    "Ravi Kumar"
+  ],
+  "Q: Which department had the highest attendance?": [
+    "Engineering",
+    "Finance"
+  ],
+  "Q: Who was present on 2026-12-25?": "NOT FOUND - answer must say the data does not contain it, with no sources"
+}

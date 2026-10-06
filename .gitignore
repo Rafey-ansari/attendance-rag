@@ -1,0 +1,8 @@
+mvenv/
+.mvenv/
+env/
+
+.env
+
+__pycache__/
+*.pyc

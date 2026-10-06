@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Attendance Assistant</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<section id="auth" class="card hidden">
+  <h1>Attendance Assistant</h1>
+  <div class="tabs"><button id="tab-login" class="on">Login</button><button id="tab-signup">Sign up</button></div>
+  <form id="authForm">
+    <input id="email" type="email" placeholder="Email" required autocomplete="username">
+    <input id="password" type="password" placeholder="Password (min 8 chars)" required minlength="8" autocomplete="current-password">
+    <button class="primary" id="authBtn">Login</button>
+    <p id="authErr" class="err"></p>
+  </form>
+</section>
+<main id="app" class="hidden">
+  <aside>
+    <h2>Your files</h2>
+    <label class="upload">+ Upload files<input id="fileInput" type="file" multiple hidden
+      accept=".csv,.tsv,.txt,.xlsx,.docx,.pdf,.png,.jpg,.jpeg"></label>
+    <p id="upMsg" class="muted"></p>
+    <ul id="files"></ul>
+    <h2>Export</h2>
+    <a href="/api/export?type=attendance&format=csv">Attendance CSV</a>
+    <a href="/api/export?type=attendance&format=xlsx">Attendance XLSX</a>
+    <a href="/api/export?type=chat&format=csv">Chat + sources CSV</a>
+    <div class="grow"></div>
+    <span id="who" class="muted"></span><button id="logout">Logout</button>
+  </aside>
+  <section class="chat">
+    <div id="log"></div>
+    <div class="row"><input id="q" placeholder="e.g. Who was present on 2026-09-03?" autocomplete="off"><button class="primary" id="send">Ask</button></div>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body></html>
